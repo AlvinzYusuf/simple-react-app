@@ -22,7 +22,7 @@ export default function Blog() {
       {!loading && (
         <div>
           {articles.map((article) => {
-            return <article>{article.title}</article>;
+            return <article key={article.id}>{article.title}</article>;
           })}
         </div>
       )}

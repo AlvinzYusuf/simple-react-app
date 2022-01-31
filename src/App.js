@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./component/Navbar";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import DetailBlog from "./pages/DetailBlog";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Blog" element={<Blog />} />
+        <Route path="/Blog:id" element={<DetailBlog />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
     </div>
